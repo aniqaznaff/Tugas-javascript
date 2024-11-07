@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript String & Array</title>
+    <script> 
+    
+    // Deklarasi awal antrian pembeli
+    let queue = ["ray", "fiki", "fadhilla", "farah"];
+
+    queue.push("nabila"); // Datang 1 pembeli baru yaitu "nabila"
+    queue.push("maza", "elsi"); // Datang 2 pembeli baru yaitu "maza" dan "elsi"
+
+    // Antrian terakhir tidak jadi antri dan pulang ke rumah
+    queue.pop();
+
+    // Antrian pertama sudah mendapatkan belanjaannya
+    queue.shift();
+
+    // Antrian kedua juga sudah mendapatkan belanjaannya
+    queue.shift();
+
+    // Datang pembeli baru yang nyerobot antrian yaitu "tomi"
+    queue.unshift("tomi");
+
+    // Menampilkan hasil akhir antrian
+    console.log(queue);
+
+    // antrian  : ["tomi", "fadhilla", "farah", "nabila", "maza"]
+
+    </script>
+    
+</head>
+<body>
+    <h1>Aniq 'Azza Nafisah</h1>
+    <h2>NIM : 2144390020</h2>
+    <h2>Tugas Javascript String & Array</h2>
+</body>
+</html>

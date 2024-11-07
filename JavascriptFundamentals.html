@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript Fundamentals</title>
+    <script>
+    
+    //string
+    let greeting = "Hello";
+    let name = 'Aniq Azza Nafisah';
+
+    // Menggabungkan string
+    let message = greeting + " My name is " + name + ".";
+    console.log(message); //Output: Hello My name is Aniq Azza Nafisah
+    alert('Hello My name is Aniq Azza Nafisah')
+
+    //boolean
+    let age = 30;
+    let isAdult = age >= 20;  // true jika age >= 20, false jika tidak
+    alert('Is Adult: true')
+
+    // Numbers
+    let num1 = 20;
+    let num2 = 25;
+
+    // Operasi aritmatika
+    let sum = num1 + num2;      // Penjumlahan
+    let difference = num1 - num2;  // Pengurangan
+    let product = num1 * num2;   // Perkalian
+    let quotient = num1 / num2;  // Pembagian
+
+    console.log("Sum:", sum);            // Output: 45
+    console.log("Difference:", difference);  // Output: -5
+    console.log("Product:", product);     // Output: 500
+    console.log("Quotient:", quotient);   // Output: 0.8
+    alert('sum = 45, Difference = -5, Product = 500, Quotient = 0.8')
+
+    //array
+    let fruits = ["Strawberry", "Pineapple", "Cherry"];
+
+    // Mengakses elemen array
+    console.log("First fruit:", fruits[0]);    // Output: Strawberry
+    console.log("Second fruit:", fruits[1]);   // Output: Pineaplle
+
+    // Menambahkan elemen ke array
+    fruits.push("Banana");
+    console.log("All fruits:", fruits);        // Output: ["Strawberry", "Pineapple", "Cherry", "Banana"]
+
+    //object
+    let person = {
+        name: "Aniq Azza Nafisah",
+        age: 21,
+        isStudent: true
+    };
+
+    // Mengakses properti objek
+    console.log("Name:", person.name);         // Output: Aniq Azza Nafisah
+    console.log("Age:", person.age);           // Output: 21
+
+    // Mengubah nilai properti objek
+    person.age = 22;
+    console.log("Updated Age:", person.age);   // Output: 22
+
+    //console.log
+    console.log("Hello, this is a message!");
+    console.log("Sum of 5 and 3 is:", 5 + 3);  // Output: Sum of 5 and 3 is: 8
+
+    // Operator logika
+    let isWeekend = true;
+    let isHoliday = false;
+
+    // Logical Operator
+    let canRelax = isWeekend || isHoliday;  // OR
+    let mustWork = isWeekend && isHoliday;  // AND
+    let notHoliday = !isHoliday;            // NOT
+
+    console.log("Can relax:", canRelax);      // Output: true
+    console.log("Must work:", mustWork);      // Output: false
+    console.log("Not holiday:", notHoliday);  // Output: true
+
+    // Perbandingan dengan == dan ===
+    let x = 5;
+    let y = '5';
+
+    console.log(x == y);    // Output: true (membandingkan nilai, tidak memperhatikan tipe data)
+    console.log(x === y);   // Output: false (membandingkan nilai dan tipe data)
+
+    let a = 10;
+    let b = 10;
+
+    console.log(a == b);    // Output: true
+    console.log(a === b);   // Output: true
+
+    </script>
+</head>
+<body>
+    <h1>Aniq 'Azza Nafisah</h1>
+    <h2>NIM : 2144390020</h2>
+    <h2>Tugas Javascript Fundamentals</h2>
+</body>
+</html>

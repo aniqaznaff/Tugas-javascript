@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript Excception (Case)</title>
+    <script>
+    function kalkulasiPerkalian(nilai1, nilai2) {
+        try {
+            // Validasi input harus number
+            if (isNaN(nilai1) || isNaN(nilai2)) {
+                throw new Error('Mohon masukkan angka yang valid!');
+            }
+
+            // Validasi input tidak boleh negatif
+            if (nilai1 < 0 || nilai2 < 0) {
+                throw new Error('Angka tidak boleh negatif!');
+            }
+
+            // Validasi input tidak boleh lebih dari 1000
+            if (nilai1 > 1000 || nilai2 > 1000) {
+                throw new Error('Angka tidak boleh lebih dari 1000!');
+            }
+
+            // Menghitung hasil perkalian
+            const hasil = nilai1 * nilai2;
+            return `Hasil perkalian: ${hasil}`;
+
+        } catch (err) {
+            // Menangkap dan menampilkan pesan error
+            return `Error: ${err.message}`;
+        } finally {
+            console.log('Kalkulasi selesai diproses');
+        }
+    }
+
+    // Test cases
+    console.log(kalkulasiPerkalian(5, 4));  // Output: Hasil perkalian: 20
+    console.log(kalkulasiPerkalian(-5, 3)); // Output: Error: Angka tidak boleh negatif!
+    console.log(kalkulasiPerkalian('abc', 5)); // Output: Error: Mohon masukkan angka yang valid!
+    console.log(kalkulasiPerkalian(1500, 2)); // Output: Error: Angka tidak boleh lebih dari 1000!
+    </script>
+</head>
+<body>
+    <h1>Aniq 'Azza Nafisah</h1>
+    <h2>NIM : 2144390020</h2>
+    <h2>Tugas Javascript Exception (Case)</h2>
+</body>
+</html>
